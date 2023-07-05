@@ -1,5 +1,5 @@
 1. Structural Re-parameterization
-   ![[Pasted image 20230704114613.png|500]]
+   ![[attchments\Pasted image 20230704114613.png|500]]
    (RepVGG)将卷积和BN层融合，构造3\*3卷积，再将3\*3卷积融合成一个，同时将参数也融合。
    训练时并行，推理时融合。
    在RepLKNet中，使用31的大核和5的小核(+BN)融合。
